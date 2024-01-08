@@ -30,15 +30,10 @@ namespace SchoolEmailNotifier.Business
             {
                 var tutorEmail = studentsTutor.Key;
 
-                //if (!(tutorEmail == "josianicristina@professor.educacao.sp.gov.br")) continue;
-
                 if (string.IsNullOrWhiteSpace(tutorEmail))
                 {
                     tutorEmail = emailInfo.EmailsCopy;
                 }
-
-                //debug
-                //tutorEmail = emailInfo.EmailTo;
 
                 string studentsTutorListHtml = GenerateHtmlEmail2(studentsTutor.ToList());
 
@@ -51,7 +46,6 @@ namespace SchoolEmailNotifier.Business
 
                 SendEmail(client, subject, studentsWithoutTutorHtml, emailInfo.EmailFrom, emailInfo.EmailsCopy, "");
             }
-            // SendEmail(client, subject, studentsWithoutTutorHtml, emailInfo.EmailFrom, emailInfo.EmailTo, "");
         }
 
         private void SendEmail(SmtpClient client, string subject, string emailHtml, string emailFrom, string emailTo, string emailCopy) 
