@@ -44,10 +44,10 @@ namespace SchoolEmailNotifier.Application
             headerRowsCount = 6;
 
             emailInfo = new EmailModel(
-                "notificacaoplanilha@gmail.com",
-                "dusilvabrandao@gmail.com", 
-                "ronovaes24@gmail.com", 
-                "guav qzip qmuc vdmf"
+                "",
+                "", 
+                "", 
+                ""
                 );
         }
 
