@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "WSL": {
+      "commandName": "WSL2"
+    },
+    "SchoolEmailNotifier": {
+      "commandName": "Project"
+    }
+  }
+}
